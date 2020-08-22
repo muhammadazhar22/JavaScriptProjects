@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
     box-sizing: border-box;
 }
@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     margin: 0;
 }
 
@@ -42,18 +42,18 @@ body {
 }
 
 .seat.selected {
-    background-color: #F49E4C;
+    background-color: #f49e4c;
 }
 
 .seat.occupied {
-    background-color: #AB3428;
+    background-color: #ab3428;
 }
 
 .seat:nth-of-type(2) {
     margin-right: 20px;
 }
 
-.seat:nth-last-of-type(2) {
+.seat:nth-last-of-type(3) {
     margin-right: 20px;
 }
 
@@ -110,5 +110,5 @@ p.text {
 }
 
 p.text span {
-    color: #CF1259;
+    color: #cf1259;
 }
