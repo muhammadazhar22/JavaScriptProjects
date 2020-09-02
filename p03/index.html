@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/progress.css">
+    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="css/style.css" />
+
+
     <title>Video Player</title>
 </head>
 
@@ -16,19 +20,33 @@
         <button class="btn" id="play">
             <i class="fas fa-play fa-2x"></i>
         </button>
-        <button class="btn" id="stop">
+        <button class="btn " id="stop">
             <i class="fas fa-stop fa-2x"></i>
         </button>
+
         <input type="range" id="progress" class="progress" min="0" max="100" step="0.01" value="0">
         <span id="timestamp" class="timestamp">00:00</span>
-    </div>
+
+        <div class="volume-control">
+            <button class="btn" id="volumebtn">
+                <i class="fas fa-volume-up fa-2x"></i>
+            </button>
+            <input type="range" id="volume" class="volume" min="0" max="100" step="1" value="0" />
+
+
+        </div>
+        <button class="btn" id="screensizebtn">
+            <i class="fas fa-expand fa-2x"></i>
+        </button>
 
 
 
 
 
-    <script src="style.js"></script>
-    <script src="https://kit.fontawesome.com/ad02a7eb83.js" crossorigin="anonymous"></script>
+        <script src="js/style.js"></script>
+        <script src="js/customprogress.js"></script>
+        <script src="https://kit.fontawesome.com/ad02a7eb83.js" crossorigin="anonymous"></script>
+        <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>!-->
 </body>
 
 </html>

@@ -4,7 +4,8 @@ var video = document.getElementById('video');
 var play = document.getElementById('play');
 var stop = document.getElementById('stop');
 var progress = document.getElementById('progress');
-var timestamp = document.getElementById('timestamp'); // Functions
+var timestamp = document.getElementById('timestamp');
+var volume = document.getElementById('video'); // Functions
 // 1 togglevideo - Play or Pause video
 // if video is playing, then pause
 // if video is paused, then play
@@ -75,4 +76,4 @@ play.addEventListener('click', toggleVideo); // 6 - Stop Button - click to reset
 
 stop.addEventListener('click', stopVideo); // 7 - Progress Bar - change position to time of playback
 
-progress.addEventListener('change', setProgress);
+progress.addEventListener('change', setProgress); // 8 -volume bar -
