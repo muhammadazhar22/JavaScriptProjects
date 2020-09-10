@@ -2,11 +2,29 @@ let video = document.getElementById('video');
 const play = document.getElementById('play');
 const stop = document.getElementById('stop');
 let progress = document.getElementById('progress');
-const timeStamp = document.getElementById('timestamp');
+let timeStamp = document.getElementById('timestamp');
 const volume = document.getElementById('volume');
 let volumeBtn = document.getElementById('volumebtn');
 let progressValue, bgColor;
 const screenSizeBtn = document.getElementById('screensizebtn');
+
+
+
+/*
+let totDuraMin = Math.floor(video.duration / 60);
+let totDuraSec = Math.floor(video.duration % 60);
+if (totDuraMin < 10) {
+    totDuraMin = `0${totDuraMin}`;
+}
+
+if (totDuraSec < 10) {
+    totDuraSec = `0${totDuraSec}`;
+}
+
+
+
+timeStamp.innerHTML = `00:00 / ${totDuraMin}:${totDuraSec}`;
+*/
 
 
 console.log(volumeBtn);
@@ -50,8 +68,22 @@ function updateProgress() {
     if (seconds < 10) {
         seconds = `0${seconds}`;
     }
+
+    let totDuraMin = Math.floor(video.duration / 60);
+    let totDuraSec = Math.floor(video.duration % 60);
+    if (totDuraMin < 10) {
+        totDuraMin = `0${totDuraMin}`;
+    }
+
+    if (totDuraSec < 10) {
+        totDuraSec = `0${totDuraSec}`;
+    }
+
+
+
+
     // Display Timestamp
-    timeStamp.innerHTML = `${minutes}:${seconds} / `;
+    timeStamp.innerHTML = `${minutes}:${seconds} / ${totDuraMin}:${totDuraSec}`;
 
 }
 
