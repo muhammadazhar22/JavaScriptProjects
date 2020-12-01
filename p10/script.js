@@ -116,4 +116,4 @@ audio.addEventListener('timeupdate', updateProgress)
 progressContainer.addEventListener('click', setProgress);
 
 // 6. Automatically Play Next Song
-audio.addEventListener('ended', nextSong)
+audio.addEventListener('ended', nextSong);
