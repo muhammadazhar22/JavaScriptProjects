@@ -1,0 +1,96 @@
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                font-family: 'Roboto', sans-serif;
+            }
+            
+            header {
+                display: flex;
+                flex-direction: column;
+                min-height: 3vh;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            h2 {
+                padding: 20px 0;
+            }
+            
+            .logo {
+                text-decoration: none;
+                color: navy;
+            }
+            
+            form {
+                padding: 20px;
+                display: flex;
+                max-width: 400px;
+                width: 100%;
+            }
+            
+            form .search-bar {
+                font-size: 14px;
+                padding: 5px;
+                width: 100%;
+                border-radius: 15px 0 0 15px;
+            }
+            
+            form .search-bar:focus {
+                outline: none;
+            }
+            
+            .search-btn {
+                border-radius: 0 15px 15px 0;
+                padding: 5px;
+                border-left: 0;
+                background-color: navy;
+                color: white;
+            }
+            
+            .img-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: grey;
+                padding: 5px 0;
+            }
+            
+            .img-info a {
+                color: grey;
+                text-decoration: none;
+            }
+            
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+                padding: 10px 0;
+                width: 80%;
+                margin: auto;
+                row-gap: 30px;
+                column-gap: 15px;
+            }
+            
+            .gallery-img img {
+                width: 100%;
+                height: 100%;
+            }
+            
+            .nav-btn {
+                min-height: 30vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .more {
+                padding: 15px 50px;
+                background-color: navy;
+                color: white;
+                border: 0;
+                font-size: 16px;
+            }
